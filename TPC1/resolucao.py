@@ -16,6 +16,7 @@ def parse_xml(xml_string):
     data['corpo'] = [ET.tostring(elem, encoding='unicode', method='text') for elem in root.findall('corpo/para')]
     data['data'] = [elem.text for elem in root.findall('corpo/data')]
     data['entidades'] = [{'tipo': elem.get('tipo'), 'nome': elem.text} for elem in root.findall('corpo/entidade')]
+    data['lista-casas'] = [{'numero': (casa.find('número').text if casa.find('número') is not None else None), 'enfiteuta': (casa.find('enfiteuta').text if casa.find('enfiteuta') is not None else None), 'foro': (casa.find('foro').text if casa.find('foro') is not None else None), 'desc': (ET.tostring(casa.find('desc'), encoding='unicode', method='xml') if casa.find('desc') is not None else None)} for casa in root.findall('corpo/lista-casas/casa')]
 
     return data
 
@@ -51,7 +52,6 @@ for filename in os.listdir(directory):
                     <meta charset="utf-8">
                 </head>
                 <body>
-                    <h1> Ruas </h1>
                 '''
 
         html += f"<h1>{data['nome']}</h1>" # Add the name to the HTML
@@ -64,6 +64,18 @@ for filename in os.listdir(directory):
 
         for para in data['corpo']: # Add each paragraph to the HTML
             html += f"<p>{para}</p>"
+        
+        # Iterate over the 'casa' elements in the XML data
+        for casa in data['lista-casas']:
+            # Add the 'casa' data to the HTML
+            html += f'''
+            <div>
+                <h2>Casa {casa['numero']}</h2>
+                <p>Enfiteuta: {casa['enfiteuta']}</p>
+                <p>Foro: {casa['foro']}</p>
+                <p> Descrição: {casa['desc']}</p>
+            </div>
+            '''
 
         html += f"<h3> <a href='../output.html'> Voltar </a> </h3>"
         # End the individual HTML
