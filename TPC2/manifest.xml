@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+    <meta>
+        <title>TPC2</title>
+        <date>2024-03-01</date>
+        <author>
+            <id>A96842</id>
+            <nome>Hugo Gomes</nome>
+        </author>
+        <uc>
+            <sigla>EngWeb2024</sigla>
+            <nome>Engenharia Web</nome>
+        </uc>
+    </meta>
+    <content>
+        Criar uma página para cada cidade: c1.html, c2.html, ...
+        Página principal:
+        Lista alfabética de cidades. Cada cidade é um link da forma
+        Serviço em Node:
+        '/' -> Página Principal
+        '/cX' -> Página da Cidade cX
+        Página da Cidade:
+        Nome, ID, Distrito, População, Ligações
+    </content>
+    <resultados>
+        <solucao>Ficheiro gerarSite.py e ficheiro de criação de servidor servidor.js</solucao>
+        <resultado>Incluido na pasta 'cities', desde os ficheiros html de cada cidade específica ao ficheiro html que contém a 'main page'</resultado>
+    </resultados>
