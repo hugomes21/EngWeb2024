@@ -19,7 +19,7 @@
 ## TPC
 TPC's por Concluir
 - [X] TPC1
-- [ ] TPC2
+- [X] TPC2
 - [ ] TPC3
 - [ ] TPC4
 - [ ] TPC5
