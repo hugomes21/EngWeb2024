@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+    <meta>
+        <title>TPC3</title>
+        <date>2024-03-02</date>
+        <author>
+            <id>A96842</id>
+            <nome>Hugo Gomes</nome>
+        </author>
+        <uc>
+            <sigla>EngWeb2024</sigla>
+            <nome>Engenharia Web</nome>
+        </uc>
+    </meta>
+    <content>
+        
+    </content>
+    <resultados>
+        <solucao>Utilizei o ficheiro 'import_json.py' para transformar o dataset 'filmes.json' no dataset (corrigido na sua sintaxe) 'filmes2.json'. Ficheiro dbCreation.py para criação da Base de Dados com id's específicos e ficheiro de criação de servidor servidor.js com bastantes funcionalidades, desde listagem de filmes, atores e géneros, bem como, informações específicas em que utilizei os id's das três categorias</solucao>
+    </resultados>

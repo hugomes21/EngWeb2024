@@ -9,6 +9,9 @@ Filmes:
 
 Listagem + consultas
 
+é suposto ter uma página html com todos os filmes (com links para cada filme específico)
+e apresentar as informações contidas na bd (de cada filme específico)
+
 1. Análise do dataset e criação de DB em json (json-server)
 2. Serviço que responde na porta XXXX às seguintes rotas:
    - GET /filmes -> listagem dos filmes | cada entrada é link para a pág. do filme
@@ -16,4 +19,4 @@ Listagem + consultas
    - /genres
    - /genres/idGen -> cada entrada é link para a pág. do género
    - /ator
-   - /ator/idAtor -> cada entrada é link para a pág. do género
+   - /ator/idAtor -> cada entrada é link para a pág. do ator
