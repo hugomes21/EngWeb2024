@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+    <meta>
+        <title>TPC3</title>
+        <date>2024-03-02</date>
+        <author>
+            <id>A96842</id>
+            <nome>Hugo Gomes</nome>
+        </author>
+        <uc>
+            <sigla>EngWeb2024</sigla>
+            <nome>Engenharia Web</nome>
+        </uc>
+    </meta>
+    <content>
+        
+    </content>
+    <resultados>
+        <solucao>Consegui implementar as rotas exigidas pelo enunciado: edição, adição e remoção. É possível observar a lista de todos os compositores e através do nome, de cada compositor, é acessado informação específica desse compositor selecionado. Na coluna do 'Período' (ainda na lista de compositores) também é possível acessar todos os compositores desse período selecionado. Também é possível listar todos os períodos exigentes. Achei desnecessário implementar a edição e remoção, pois a lista de períodos só é obtida através dos compositores existentes.</solucao>
+    </resultados>
