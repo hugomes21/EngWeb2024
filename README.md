@@ -22,7 +22,7 @@ TPC's por Concluir
 - [X] TPC2
 - [X] TPC3
 - [X] TPC4
-- [ ] TPC5
+- [X] TPC5
 - [ ] TPC6
 - [ ] TPC7
 - [ ] TPC8 
