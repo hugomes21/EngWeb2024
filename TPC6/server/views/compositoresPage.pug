@@ -1,0 +1,25 @@
+extends layout 
+
+block content
+    .w3-card-4  
+        .w3-container.w3-teal
+            h2 Composer #{compositor.id} Details
+            ul.w3-ul.w3-card-4(style="width:100%")
+                li  
+                    b  Nome: #{compositor.nome}
+                li  
+                    b  Biografia: #{compositor.bio}
+                li 
+                    b Data de Nascimento: 
+                    span #{compositor.dataNasc}
+                li 
+                    b Data de Morte: 
+                    span #{compositor.dataObito}
+                li 
+                    b Periodo: 
+                    span #{compositor.periodo}
+    footer.w3-container.w3-teal  
+        address  
+            span Gerado por EngWeb2023 em #{date} - [
+                a(href="/compositores")  Voltar  
+                span ]
